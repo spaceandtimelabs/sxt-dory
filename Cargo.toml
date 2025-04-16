@@ -1,0 +1,9 @@
+[package]
+name = "dory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[workspace.lints.clippy]
+pedantic = "warn"
