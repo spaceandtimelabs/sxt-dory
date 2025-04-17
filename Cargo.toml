@@ -1,7 +1,11 @@
 [package]
 name = "dory"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
+license = "Apache-2.0"
+description = "A flexible implementation of the Dory polynomial commitment scheme."
+repository = "https://github.com/spaceandtimelabs/sxt-dory"
+exclude = [".github", "README.md"]
 
 [dependencies]
 serde = { version = "1.0.219", default-features = false, features = ["derive"] }
@@ -16,4 +20,4 @@ doc_markdown = "allow"
 missing_docs_in_private_items = "warn"
 
 [package.metadata.docs.rs]
-rustdoc-args = [ "--html-in-header", "katex-header.html" ]
+rustdoc-args = ["--html-in-header", "katex-header.html"]
