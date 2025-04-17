@@ -8,6 +8,8 @@
 
 /// Module containing the [`ProofBuilder`] trait.
 mod builder;
+/// Module containing the [`inner_product_prove`] function.
+mod inner_product;
 /// Module containing structs of the messages exchanged between the prover and verifier.
 ///
 /// This consists of two messages each during the Dory-Reduce phase,
@@ -18,4 +20,5 @@ pub mod messages;
 mod state;
 
 pub use builder::ProofBuilder;
+pub use inner_product::inner_product_prove;
 pub use state::ProverState;
