@@ -6,9 +6,13 @@
 //! This crate provides a Rust implementation of the commitment scheme, intended to be usable as a
 //! building block for other zk/SNARK protocols.
 
+/// Module containing the [`ProofBuilder`] trait.
+mod builder;
 /// Module containing structs of the messages exchanged between the prover and verifier.
 ///
 /// This consists of two messages each during the Dory-Reduce phase,
 /// the verifier challenge during the Fold-Scalars phase,
 /// and the final prover message during the Scalar-Product phase.
 pub mod messages;
+
+pub use builder::ProofBuilder;
