@@ -14,5 +14,8 @@ mod builder;
 /// the verifier challenge during the Fold-Scalars phase,
 /// and the final prover message during the Scalar-Product phase.
 pub mod messages;
+/// Module containing the [`ProverState`] trait.
+mod state;
 
 pub use builder::ProofBuilder;
+pub use state::ProverState;
