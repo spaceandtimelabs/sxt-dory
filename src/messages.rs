@@ -19,7 +19,7 @@ pub struct FirstReduceMessage<G1, G2, GT> {
     pub e2_beta: G2,
 }
 
-/// The the first verifier challenge in the Dory-Reduce portion (Section 3.2) of the Dory protocol.
+/// The first verifier challenge in the Dory-Reduce portion (Section 3.2) of the Dory protocol.
 ///
 /// The challenge, $\beta$, is a random scalar. Additionally, $\beta$ must be non-zero because
 /// the protocol uses $\beta^{-1}$, which we also include here.
